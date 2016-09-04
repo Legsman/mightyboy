@@ -1,2 +1,9 @@
 @import "bootstrap-sprockets";
 @import "bootstrap";
+
+.img-responsive {
+    max-width: 100%;
+    height: auto;
+    text-align: center;
+    display: inline;
+    }

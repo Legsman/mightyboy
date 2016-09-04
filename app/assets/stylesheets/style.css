@@ -395,7 +395,7 @@ Overlays
 
 .bg-dark-30:before {
 	position: absolute;
-	background: rgba(0, 0, 0, .3);
+	background: #2b235f;
 	content: " ";
 	height: 100%;
 	width: 100%;
@@ -640,6 +640,12 @@ Navbar
 
 .navbar-custom .navbar-toggle .icon-bar {
 	background: #000;
+}
+
+.navbar-brand>img {
+  height: 100%;
+  padding: 15px;
+  width: auto;
 }
 
 /* -------------------------------------------------------------------
