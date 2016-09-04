@@ -40,10 +40,11 @@
 
 					<!-- PORTFOLIO ITEM -->
 					<li class="work-item marketing webdesign">
-						<a href="portfolio-single-1.html">
+						<%= link_to new_order_path do %>
 							<div class="work-image">
 								<%= image_tag 'catering.jpg', class: 'img-responsive' %>
 							</div>
+							<% end %>
 							<div class="work-caption">
 								<h3 class="work-title font-alt">Order / Pick-up</h3>
 								<div class="work-descr font-inc">

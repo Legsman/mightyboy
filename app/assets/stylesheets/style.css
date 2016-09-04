@@ -405,7 +405,7 @@ Overlays
 
 .bg-dark-50:before {
 	position: absolute;
-	background: rgba(0, 0, 0, .5);
+	background: #2b235f;
 	content: " ";
 	height: 100%;
 	width: 100%;
