@@ -31,6 +31,10 @@ gem 'turbolinks'
 # Build JSON APIs with ease. Read more: https://github.com/rails/jbuilder
 gem 'jbuilder', '~> 1.2'
 
+#Allows map and secure key 
+gem "geocoder", "1.3.4"
+gem "figaro", ">= 1.0.0"
+
 # Bootstrap it all
 gem 'bootstrap-sass', '~> 3.3.5.1'
 gem 'sprockets', '2.11.0'

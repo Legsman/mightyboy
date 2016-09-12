@@ -24,10 +24,11 @@
 
 					<!-- PORTFOLIO ITEM -->
 					<li class="work-item illustration webdesign">
-						<a href="portfolio-single-1.html">
+						<%= link_to new_catering_path do %>
 							<div class="work-image">
 								<%= image_tag 'order.jpg', class: 'img-responsive' %>
 							</div>
+							<% end %>
 							<div class="work-caption">
 								<h3 class="work-title font-alt">Catering</h3>
 							</div>
@@ -37,13 +38,14 @@
 
 					<!-- PORTFOLIO ITEM -->
 					<li class="work-item marketing webdesign">
-						<%= link_to new_order_path do %>
 							<div class="work-image">
 								<%= image_tag 'catering.jpg', class: 'img-responsive' %>
 							</div>
-							<% end %>
 							<div class="work-caption">
 								<h3 class="work-title font-alt">Order / Pick-up</h3>
+								 <div class="work-descr font-inc">
+                  COMING SOON !
+                </div>
 							</div>
 						</a>
 					</li>
@@ -67,7 +69,7 @@
         <div class="row">
     
           <!-- CONTENT BOX -->
-          <div class="col-sm-4">
+          <div class="col-sm-6">
             <div class="content-box">
               <div class="content-box-title font-inc">
                 59-61 Gertrude St, Fitzroy
@@ -77,17 +79,7 @@
           <!-- /CONTENT BOX -->
     
           <!-- CONTENT BOX -->
-          <div class="col-sm-4">
-            <div class="content-box">
-              <div class="content-box-title font-inc">
-                03 9419 3686
-              </div>
-            </div>
-          </div>
-          <!-- /CONTENT BOX -->
-    
-          <!-- CONTENT BOX -->
-          <div class="col-sm-4">
+          <div class="col-sm-6">
             <div class="content-box">
               <div class="content-box-title font-inc">
                 hello@mightyboyeatery.com.au
