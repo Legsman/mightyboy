@@ -9,5 +9,19 @@
  * compiled file, but it's generally better to create a new file per style scope.
  *
  *= require_self
+ *= require_style
+ *= require_font-awesome
+ *= require_main
+ *= require_animate
+ *= require_custom
+ *= require_et-line-font
+ *= require_flexslider
+ *= require_font-awesome.min
+ *= require_linecons
+ *= require_magnific-popup
+ *= require_simpletextrotator
+ *= require_slider
+ *= require_style
+ *= require_vertical
  *= require_tree .
  */
