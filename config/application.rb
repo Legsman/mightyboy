@@ -8,6 +8,19 @@ Bundler.require(:default, Rails.env)
 
 module Mightyboy
   class Application < Rails::Application
+    config.assets.precompile += [
+    'hella-tite.css',
+    'animate.css',
+    'et-line-font.css',
+    'flexslider.css',
+    'font-awesome.css',
+    'linecons.css',
+    'magnific-popup.css',
+    'simpletextrotator.css',
+    'style.css',
+    'silder.css',
+    'vertical.css'
+ ]
     # Settings in config/environments/* take precedence over those specified here.
     # Application configuration should go into files in config/initializers
     # -- all .rb files in that directory are automatically loaded.
