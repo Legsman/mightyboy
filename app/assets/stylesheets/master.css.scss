@@ -9,3 +9,37 @@
     text-align: center;
     display: inline;
     }
+
+
+
+.modal {
+  text-align: center;
+}
+
+@media screen and (min-width: 768px) { 
+  .modal:before {
+    display: inline-block;
+    vertical-align: middle;
+    content: " ";
+    height: 100%;
+  }
+}
+
+.modal-dialog {
+  display: inline-block;
+  text-align: left;
+  vertical-align: middle;
+}
+
+.btn-primary {
+  background-color: #2b235f;
+  border-color: #2b235f;
+}
+
+.work-caption {
+  bottom: 50%;
+}
+
+.modal-backdrop{
+  z-index: 0;
+}
