@@ -13,7 +13,6 @@
 //= require jquery
 //= require bootstrap-sprockets
 //= require jquery_ujs
-//= require turbolinks
 //= require wow
 //= require wow.min
 //= require jquery.flexslider-min
@@ -33,4 +32,6 @@
 //= require imagesloaded.pkgd
 //= require isotope.pkgd
 //= require isotope.pkgd.min
+//= require underscore
+//= require gmaps/google
 //= require_tree .

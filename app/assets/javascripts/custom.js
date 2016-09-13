@@ -320,7 +320,7 @@
 		 * Google Map
 		/* ---------------------------------------------- */
 
-		var mapLocation = new google.maps.LatLng(-37.8056891,144.9752395,1);
+		var mapLocation = new google.maps.LatLng(-37.8054221,144.9760924,15);
 		
 
 		var $mapis = $('#map');

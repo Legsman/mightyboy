@@ -34,6 +34,8 @@ gem 'jbuilder', '~> 1.2'
 #Allows map and secure key 
 gem "geocoder", "1.3.4"
 gem "figaro", ">= 1.0.0"
+gem 'gmaps4rails'
+gem 'underscore-rails'
 
 # Bootstrap it all
 gem 'bootstrap-sass', '~> 3.3.5.1'
