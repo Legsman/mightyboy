@@ -23,6 +23,7 @@
 //= require jquery.flexslider
 //= require appear
 //= require contact
+//= require jqBootstrapValidation
 //= require custom
 //= require jquery.simple-text-rotator
 //= require jquery.simple-text-rotator.min
