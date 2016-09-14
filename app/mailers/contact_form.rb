@@ -1,7 +1,7 @@
 class ContactForm < ActionMailer::Base
 
 default from: "noreply@mightyboy.com"
-  default to: "maciaantoine@yahoo.fr"
+  default to: "hello@mightyboyeatery.com.au"
 
   def new_catering(catering)
     @catering = catering
