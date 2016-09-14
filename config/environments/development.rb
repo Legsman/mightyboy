@@ -7,8 +7,8 @@ config.action_mailer.delivery_method = :smtp
     domain: "example.com",
     authentication: "plain",
     enable_starttls_auto: true,
-    user_name: "antoine.macia83@gmail.com",
-    password: "antoinedu83200"
+    user_name: ENV['GMAIL_ADDRESS'],
+    password: ENV['GMAIL_PASSWORD']
   }
   # Settings specified here will take precedence over those in config/application.rb.
 
