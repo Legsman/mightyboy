@@ -9,7 +9,7 @@ Mightyboy::Application.configure do
     :enable_starttls_auto => true
     }
   # Settings specified here will take precedence over those in config/application.rb.
-  coonfig.action_mailer.delivery_method = :smtp
+  config.action_mailer.delivery_method = :smtp
   config.action_mailer.perform_deliveries = true
   config.action_mailer.raise_delivery_errors = false
   config.action_mailer.default :charset => "utf-8"
