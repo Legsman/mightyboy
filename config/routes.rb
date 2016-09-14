@@ -2,7 +2,9 @@ Mightyboy::Application.routes.draw do
 
    root 'static_pages#index'
    resources :orders, only: [:new, :create, :show]
-   resources :catering, only: :new
+   get 'catering', to: 'catering#new', as: 'contact'
+   get 'catering', to: 'catering#index', as: 'catering'
+   post 'catering', to: 'catering#create'
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
 

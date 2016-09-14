@@ -34,28 +34,30 @@
 
 					<div class="col-sm-6 col-sm-offset-3">
 
+						<%= simple_form_for @catering, url: contact_path do |message_form| %>
 						<form id="contact-form" role="form" novalidate="">
 
 							<div class="form-group">
 								<label class="sr-only" for="cname">Name</label>
-								<input type="text" id="cname" class="form-control" name="cname" placeholder="Name" required="" data-validation-required-message="Please enter your name." aria-invalid="false">
+								<%= message_form.text_field :name, class: 'form-control', id: 'cemail', placeholder: "Name" %>
 								<p class="help-block text-danger"></p>
 							</div>
 
 							<div class="form-group">
 								<label class="sr-only" for="cemail">Your Email</label>
-								<input type="email" id="cemail" name="cemail" class="form-control" placeholder="Your E-mail" required="" data-validation-required-message="Please enter your email address.">
+								<%= message_form.email_field :email, class: 'form-control', id: 'cemail', placeholder: 'Your Email Address' %>
 								<p class="help-block text-danger"></p>
 							</div>
 
 							<div class="form-group">
-								<textarea class="form-control" id="cmessage" name="cmessage" rows="7" placeholder="Message" required="" data-validation-required-message="Please enter your message."></textarea>
+								<%= message_form.text_area :message, class: 'form-control', id:"cmessage", rows: 7, placeholder: 'Your message here...' %>
 								<p class="help-block text-danger"></p>
 							</div>
 
-							<button type="submit" class="btn btn-round btn-g">Submit</button>
+							<%= message_form.submit "Send", class: 'btn btn-round btn-g' %>
 
 						</form>
+						<% end %>
 
 						<!-- Ajax response -->
 						<div id="contact-response" class="ajax-response font-alt"></div>
