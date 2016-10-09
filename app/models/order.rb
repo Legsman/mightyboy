@@ -17,4 +17,3 @@ private
     self[:subtotal] = subtotal
   end
 end
-end

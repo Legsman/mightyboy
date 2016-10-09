@@ -1,9 +1,9 @@
 Mightyboy::Application.routes.draw do
 
   get "items/index"
-  get "carts/show"
+  get "cart/show", as: 'cart'
    root 'static_pages#index'
-   resources :orders, only: [:new, :create, :show]
+   resources :orders, only: [:update, :create, :destroy]
    get 'catering', to: 'catering#new', as: 'contact'
    get 'catering', to: 'catering#index', as: 'catering'
    post 'catering', to: 'catering#create'
