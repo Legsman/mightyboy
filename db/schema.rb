@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20160913074047) do
+ActiveRecord::Schema.define(version: 20161009075345) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
@@ -35,6 +35,25 @@ ActiveRecord::Schema.define(version: 20160913074047) do
 
   add_index "items", ["order_id"], name: "index_items_on_order_id", using: :btree
 
+  create_table "order_items", force: true do |t|
+    t.integer  "item_id"
+    t.integer  "order_id"
+    t.decimal  "unit_price",  precision: 12, scale: 3
+    t.integer  "quantity"
+    t.decimal  "total_price", precision: 12, scale: 3
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
+
+  add_index "order_items", ["item_id"], name: "index_order_items_on_item_id", using: :btree
+  add_index "order_items", ["order_id"], name: "index_order_items_on_order_id", using: :btree
+
+  create_table "order_statuses", force: true do |t|
+    t.string   "name"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
+
   create_table "orders", force: true do |t|
     t.string   "name"
     t.string   "email"
@@ -43,6 +62,9 @@ ActiveRecord::Schema.define(version: 20160913074047) do
     t.text     "info"
     t.datetime "created_at"
     t.datetime "updated_at"
+    t.integer  "order_status_id"
   end
+
+  add_index "orders", ["order_status_id"], name: "index_orders_on_order_status_id", using: :btree
 
 end

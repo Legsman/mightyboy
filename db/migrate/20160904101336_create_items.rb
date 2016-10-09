@@ -6,7 +6,7 @@ class CreateItems < ActiveRecord::Migration
       t.text :description
       t.decimal :price
       t.integer :order_id
-      t.boolean :selected, default: false
+      t.boolean :selected
       t.string :option
 
       t.timestamps

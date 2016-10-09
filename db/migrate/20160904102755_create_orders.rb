@@ -12,5 +12,7 @@ class CreateOrders < ActiveRecord::Migration
 
       t.timestamps
     end
+
+    add_index :orders, :order_status_id, :integer
   end
 end
