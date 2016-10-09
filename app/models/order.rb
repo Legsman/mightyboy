@@ -1,3 +1,4 @@
 class Order < ActiveRecord::Base
-  has_many :items
+  belongs_to :order_status
+  has_many :order_items
 end
