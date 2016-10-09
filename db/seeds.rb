@@ -8,7 +8,7 @@
 Item.delete_all
 Item.create! id: 1, name: "Banana", price: 0.49, selected: true
 Item.create! id: 2, name: "Apple", price: 0.29, selected: true
-Item.create! id: 3, name: "Carton of Strawberries", price: 1.99, active: true
+Item.create! id: 3, name: "Carton of Strawberries", price: 1.99, selected: true
 
 OrderStatus.delete_all
 OrderStatus.create! id: 1, name: "In Progress"
